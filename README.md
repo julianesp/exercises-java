@@ -1,4 +1,4 @@
-### Esta entrega es realizada para el curso de introducción a la programación de Open BootCamp
+# Esta entrega es realizada para el curso de introducción a la programación de Open BootCamp
 ## Entrega de ejercicios del tema 3
 
 1. En el primer punto se crea una función que recibe 3 parámetros que debe ingresar el usuario
