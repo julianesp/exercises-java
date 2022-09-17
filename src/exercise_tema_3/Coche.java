@@ -1,3 +1,4 @@
+package exercise_tema_3;
 import java.util.Scanner;
 
 public class Coche {
