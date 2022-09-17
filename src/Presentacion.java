@@ -10,8 +10,8 @@ public class Presentacion {
 		
 		do {
 			System.out.println("Ejercicios tema 3\n");
-			System.out.println("1. Primera parte");
-			System.out.println("2. Segunda parte");
+			System.out.println("1. Suma");
+			System.out.println("2. Número de puertas");
 			System.out.println("3. Salir");
 			System.out.println("");
 			System.out.print("Digite una opción: ");
@@ -54,10 +54,6 @@ public class Presentacion {
 	public static void coche() {
 		Coche miCoche = new Coche();
 		
-		for (int i = 0; i < 1; i++) {
-			miCoche.incrementarPuertas();
-		}
-		
-		System.out.println("\nPuertas añadidas: " + miCoche.incrementarPuertas() + "\n");
+		miCoche.incrementarPuertas();
 	}
 }
