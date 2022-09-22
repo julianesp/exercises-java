@@ -28,4 +28,6 @@ public class Condicional {
 			System.out.println("El número ingresado es cero");
 		}
 	}
+	
+	
 }
