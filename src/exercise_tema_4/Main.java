@@ -7,11 +7,11 @@ public class Main {
 	public static Scanner entrada = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		int opc = 0;
+		int opc = 0;			
 		
 		do {
 			// Menú de ejercicios
-			System.out.println("Menú:\n");
+			System.out.println("\nMenú:\n");
 			System.out.println("1. Condicional if");
 			System.out.println("2. Bucle While");
 			System.out.println("3. Buble Do - While");
@@ -26,7 +26,7 @@ public class Main {
 				evaluarSigno();
 				break;
 			case 2:
-				evaluarSigno();
+				condicion();
 				break;
 			case 3:
 				evaluarSigno();
@@ -49,6 +49,7 @@ public class Main {
 	}	
 	
 	public static void evaluarSigno () {
+
 		int opc = 0;
 		
 		Condicional numero = new Condicional();
@@ -70,4 +71,21 @@ public class Main {
 			}			
 		} while (opc != -10000);
 	}
+	
+	public static void condicion () {
+		int numeroWhile = 1;
+		
+		System.out.println("se debe recorrer una sola vez y pedir si se quiere volver a recorrer");
+		
+		while (numeroWhile <= 3) {			
+			System.out.println("Valor de la variable: " + numeroWhile);
+			numeroWhile++;
+			
+			while (numeroWhile == 3) {
+				System.out.println("Llegaste al número " + numeroWhile);
+				return;
+			}
+		}
+	}
 }
+

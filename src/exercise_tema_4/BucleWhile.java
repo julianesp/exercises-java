@@ -4,11 +4,14 @@ public class BucleWhile {
 	
 	public static void condicion () {
 		int numeroWhile = 0;
-		//este bucle tendrá que tener como condición que la variable numeroWhile sea inferior a 3
 		
 		while (numeroWhile < 3) {
-			System.out.print("Incrementando variable: ");
+			System.out.print("Valor de la variable: ");
 			numeroWhile++;
+			
+			if (numeroWhile == 3) {
+				System.out.println("El número " + numeroWhile + " llegó a su límite permitido");
+			}
 		}		
 	}
 }
