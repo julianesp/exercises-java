@@ -1,5 +1,6 @@
 package exercise_tema_4;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +16,7 @@ public class Main {
 			System.out.println("1. Condicional if");
 			System.out.println("2. Bucle While");
 			System.out.println("3. Buble Do - While");
+			System.out.println("4. Mostrar valor de condicion");
 			System.out.println("4. Bucle For");
 			System.out.println("5. Estructura condicional Switch");
 			System.out.println("6. Salir");
@@ -32,7 +34,7 @@ public class Main {
 				evaluarSigno();
 				break;
 			case 4:
-				evaluarSigno();
+				
 				break;
 			case 5:
 				evaluarSigno();
@@ -73,17 +75,19 @@ public class Main {
 	}
 	
 	public static void condicion () {
-		int numeroWhile = 1;
+		int numeroWhile = 0;
+		int aumento = 3;
 		
-		System.out.println("se debe recorrer una sola vez y pedir si se quiere volver a recorrer");
-		
-		while (numeroWhile <= 3) {			
-			System.out.println("Valor de la variable: " + numeroWhile);
-			numeroWhile++;
+		// Incrementar valor de numeroWhile en 1
+		while (numeroWhile < aumento) {			
+			System.out.println("Valor de número: " + numeroWhile++);
 			
-			while (numeroWhile == 3) {
-				System.out.println("Llegaste al número " + numeroWhile);
-				return;
+			// cada vez que entre en este ciclo, la variable numeroWhile
+			// aumentará su valor m+as 1
+			if (numeroWhile == 3) {
+				System.out.println("Valor de número: " + numeroWhile);
+				System.out.println("Haz llegado al final");
+				System.exit(0);
 			}
 		}
 	}
